@@ -2,12 +2,25 @@ const express = require('express');
 const server = express();
 const port = 3000;
 
-const Routes = require('./routes/ejemplo');
+///Rutas de cada componente
+//Rutas del ejemplo
+const RoutesEjemplo = require('./routes/ejemplo');
 
 server.use(express.json())
-server.use('/api/v1/clients', Routes.ClientsRoutes)
-server.use('/api/v1/products', Routes.ProductRoutes)
-server.use('/api/v1/sales', Routes.SaleRoutes)
+server.use('/api/v1/clients', RoutesEjemplo.ClientsRoutes)
+
+//Rutas del modulo de agendamiento "Leidy Urrego"
+
+//Rutas del modulo de informacion de pacientes "José Moreno, Harol García"
+
+//Rutas del modulo de propietarios "sin asignar"
+
+//Rutas del modulo de registro de veterinarios y autenticacion " Leonardo, Robert"
+
+//Rutas del modulo de registro medico de pacientes "sin asignar"
+
+
+
 
 server.listen(port, () => {
 console.log(`API escuchando en puerto ${port}.`);
