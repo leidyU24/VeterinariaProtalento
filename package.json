@@ -9,6 +9,7 @@
     "dev": "nodemon server.js",
     "knex": "knex init",
     "knex_migrate_clients": "knex migrate:make clients",
+    "knex_migrate_appointments": "knex migrate:make appointments",
     "knex_latest": "knex migrate:latest"
   },
   "keywords": [],
