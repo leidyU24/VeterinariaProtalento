@@ -8,6 +8,7 @@ const RoutesEjemplo = require('./routes/ejemplo');
 const RoutesAppointments = require('./routes/AppointmentCalendar');
 
 server.use(express.json())
+
 server.use('/api/v1/clients', RoutesEjemplo.ClientsRoutes)
 
 //Rutas del modulo de agendamiento "Leidy Urrego"
