@@ -6,11 +6,14 @@
 module.exports = {
 
   development: {
-    client: 'postgresql',
+    client: 'pg',
     connection: {
-      database: 'veterinaria',
-      user:     'postgres',
-      password: 'root'
+      host: 'peanut.db.elephantsql.com',
+      port: '5432',
+      database: 'jpnsyldt',
+      user:     'jpnsyldt',
+      password: 'bwswQqL9A8EqVIBSezKIpyLFHiUzuaH7',
+      ssl: true
     },
     pool: {
       min: 2,
