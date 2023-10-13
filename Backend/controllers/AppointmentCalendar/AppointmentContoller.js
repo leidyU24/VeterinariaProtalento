@@ -16,12 +16,12 @@ const getAppointment = (req, res) => {
 };
 
 const insetAppointment = (req, res) => {
-    const { appointments_date, appointments_type, appointments_status} = req.body
+    const { appointments_patient,appointments_owner,appointments_date,appointments_veterinary,appointments_type,appointments_status} = req.body
 
     if (appointments_date !== '' && appointments_type !== '') {
         appointmentModel
-            .insetAppointment({appointments_date, appointments_type, appointments_status })
-            .then(results => res.status(201).json({ message: "Appointmente agregado exitosamente" }))
+            .insetAppointment({appointments_patient,appointments_owner,appointments_date,appointments_veterinary,appointments_type,appointments_status })
+            .then(results => res.status(201).json("Cita agendada exitosamente"))
             .catch(error => res.status(500).json(error));
     }
     else {
@@ -31,11 +31,11 @@ const insetAppointment = (req, res) => {
 
 const updateAppointment = (req, res) => {
     const { id } = req.params
-    const {appointments_date, appointments_type, appointments_status  } = req.body
+    const {appointments_patient,appointments_owner,appointments_date,appointments_veterinary,appointments_type,appointments_status  } = req.body
     if (appointments_date !== '' && appointments_type !== '') {
         appointmentModel
-            .updateAppointment(id, { appointments_date, appointments_type, appointments_status  })
-            .then(results => res.status(201).json(results))
+            .updateAppointment(id, { appointments_patient,appointments_owner,appointments_date,appointments_veterinary,appointments_type,appointments_status  })
+            .then(results => res.status(201).json({ message: 'Actualizacion Exitosa' }))
             .catch(error => res.status(500).json({ message: 'Error al actualizar' }))
     } else {
         res.status(400).send({ message: 'Nombre invalido' })

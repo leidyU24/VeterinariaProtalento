@@ -1,0 +1,8 @@
+.cardis{
+    display: flex;
+    flex-direction: row;
+    /* width: 50%; */
+    margin: 10px;
+    align-content: center;
+    flex-wrap: wrap;
+}

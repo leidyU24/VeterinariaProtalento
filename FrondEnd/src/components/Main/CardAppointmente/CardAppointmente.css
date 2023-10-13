@@ -1,0 +1,17 @@
+.cardajust{
+    margin: 10px;
+    justify-content: center;
+}
+.typoFont{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.ocultar{
+    display: none;
+}
+
+.cardGobal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

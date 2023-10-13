@@ -9,7 +9,7 @@ const getAllAppointment = () => {
 const getAppointment = (id) => {
     //select * from clients where id = idClient
     return database('appointments')
-        .where({ id: idAppointments });
+        .where('id_appointments','=', id);
 };
 
 const insetAppointment = (id) => {
@@ -21,7 +21,7 @@ const insetAppointment = (id) => {
 const updateAppointment = (id, Appointments) => {
     //insert into clients (first_name,...) values('Maria',....)
     return database('appointments')
-        .where('id_factura','=', id)
+        .where('id_appointments','=', id)
         .update(Appointments)
 };
 

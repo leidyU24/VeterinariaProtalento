@@ -1,0 +1,122 @@
+@media screen and (min-width: 700px) {
+    .navbar,
+    .navbar-end,
+    .navbar-menu,
+    .navbar-start {
+        align-items: stretch;
+        display: flex;
+    }
+}
+@media screen and (max-width: 700px) {
+    .navbar-menu,
+    .navbar-brand  {
+        box-shadow: 0 8px 16px rgba(10, 10, 10, .1);
+    }
+}
+
+
+@media screen and (min-width: 700px) {
+    .navbar-menu {
+        flex-grow: 1;
+        flex-shrink: 0;
+        background-color: #fff;
+        padding: .5rem 0;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .navbar-link::after {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .navbar-item.has-dropdown {
+        align-items: stretch;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .navbar {
+        min-height: 3.25rem;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .navbar-burger {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .navbar-start {
+        justify-content: flex-start;
+        margin-right: auto;
+    }
+}
+
+
+
+
+@media screen and (min-width: 700px) {
+
+    .navbar-item,
+    .navbar-link {
+        align-items: center;
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .navbar-dropdown {
+        background-color: #fff;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        border-top: 2px solid #dbdbdb;
+        box-shadow: 0 8px 8px rgba(10, 10, 10, .1);
+        display: none;
+        font-size: .875rem;
+        left: 0;
+        min-width: 100%;
+        position: absolute;
+        top: 100%;
+        z-index: 20;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .navbar-item.has-dropdown.is-active .navbar-link,
+    .navbar-item.has-dropdown:focus .navbar-link,
+    .navbar-item.has-dropdown:hover .navbar-link {
+        background-color: #fafafa;
+    }
+}
+
+@media screen and (min-width: 700px){
+    .navbar-item.is-active .navbar-dropdown, .navbar-item.is-hoverable:focus .navbar-dropdown, .navbar-item.is-hoverable:focus-within .navbar-dropdown, .navbar-item.is-hoverable:hover .navbar-dropdown {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 700px){
+    .navbar-end {
+        justify-content: flex-end;
+        margin-left: auto;
+    }
+}
+
+@media screen and (min-width: 700px){
+    .navbar-dropdown a.navbar-item {
+        padding-right: 3rem;
+    }
+}
+
+
+
+@media screen and (min-width: 700px){
+    .navbar-dropdown .navbar-item {
+        padding: .375rem 1rem;
+        white-space: nowrap;
+    }
+}
+

@@ -1,6 +1,9 @@
 const express = require('express');
 const server = express();
+const cors = require('cors');
 const port = 3000;
+
+server.use(cors());
 
 ///Rutas de cada componente
 //Rutas del ejemplo
